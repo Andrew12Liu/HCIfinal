@@ -62,7 +62,7 @@ function MyClearCenteredModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={()=>{props.onHide();window.location.reload(false);}}>Dismiss</Button>
+        <Button onClick={()=>{props.onHide();window.location.reload(false);}}>Still Clear</Button>
       </Modal.Footer>
     </Modal>
   );
