@@ -8,12 +8,70 @@ import Checkmarks from "./stuff/checkmarks";
 import Legend from "./stuff/legend";
 import Navigation from "./stuff/nav";
 import Filing from "./stuff/filing";
-import {Button, Col, Container, Row } from "react-bootstrap";
+import {Button, Col, Container, Row, Modal } from "react-bootstrap";
 import Searched from "./stuff/searched";
 import { useEffect, useState } from "react";
 
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Tips
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Navigation Tips</h4>
+        <p>
+          After entering your query, navigate below to see insider trade information, stock chart, and trade volume.
+
+          Make use of all the query settings to get the exact trades you are looking for.
+
+          Make sure to clear to go back to the top and clear the query.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function MyClearCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Warning
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>
+        Clearing will remove all your query settings.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={()=>{props.onHide();window.location.reload(false);}}>Dismiss</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 function App() {
   const [count, setCount] = useState(false );
+  const [modalShow, setModalShow] = useState(false);
+  const [clearmodalShow, clearsetModalShow] = useState(false);
   return (
     
     <Container className="main">
@@ -37,8 +95,29 @@ function App() {
         </Col>
       </Row>
       <Row></Row>
+      <>
       <Button onClick = {() => setCount(true)} style = {{"width" : "10vw"}}> Search</Button>
-      <Button onClick={() => window.location.reload(false)}>Clear</Button>
+      {" "}
+      <Button onClick={() => {clearsetModalShow(true);
+        
+      
+      }}>Clear</Button>
+      {" "}
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Tips
+      </Button>
+      </>
+      
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+      <MyClearCenteredModal
+        show={clearmodalShow}
+        onHide={() => clearsetModalShow(false)}
+      />
+
+
       <Legend />
      {count ? (<Searched/>) : (<></>)} 
       
