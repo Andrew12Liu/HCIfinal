@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import stuff from "./searched.json";
-import "../App.css";
+import logo from './insiderChart.png';
 import comp from "./company.json";
 
 import {
@@ -79,6 +79,11 @@ export default function Searched() {
       </body>
       <img
         src="https://cdn.sanity.io/images/eydex0le/production/12080a174ff9ad359811460e80cade845297f6ad-1304x425.png?w=1304&h=425&auto=format"
+        alt=""
+      />
+      <h2>Insider Trading</h2>
+      <img
+        src={logo}
         alt=""
       />
 
