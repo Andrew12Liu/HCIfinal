@@ -11,6 +11,8 @@ import Filing from "./stuff/filing";
 import {Button, Col, Container, Row, Modal } from "react-bootstrap";
 import Searched from "./stuff/searched";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 
 
 function MyVerticallyCenteredModal(props) {
@@ -104,7 +106,7 @@ function App() {
       }}>Clear</Button>
       {" "}
       <Button variant="primary" onClick={() => setModalShow(true)}>
-        Tips
+      <FontAwesomeIcon icon={faQuestion} />
       </Button>
       </>
       
