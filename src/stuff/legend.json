@@ -25,22 +25,22 @@
     { "title" : "S-Sale",
         "start" : "Sale of securities on an exchange or to another person",
         "end":"test3"
-        ,"color" : "red"
+        ,"color" : "lightred"
     },
     { "title" : "S - Sale+OE",
         "start" : "Sale of securities on an exchange or to another person (after option exercise)",
         "end":"test3",
-        "color" : "yellow"
+        "color" : "lightyellow"
     },
     { "title" : "F - Tax",
         "start" : "Payment of exercise price or tax liability using portion of securities received from the company",
         "end":"test3",
-        "color" : "blue"
+        "color" : "lightblue"
     },
     { "title" : "P - Purchase",
         "start" : "Purchase of securities on an exchange or from another person",
         "end":"test3",
-        "color" : "green"
+        "color" : "lightgreen"
     }
     
 ]} 

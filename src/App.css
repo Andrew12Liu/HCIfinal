@@ -1,37 +1,40 @@
-
-
 .main{ 
   margin: 10px;
   max-width: 100%;
-
-
 }
 
 .row{ 
   margin: 10px;
- 
-
 }
-.legendRow{ 
+.legendRow {
   margin: 0;
 }
 
-.rowbox{ 
-  
+.rowbox {
   margin-left: 0;
   margin-right: 0;
-
 }
 
-
-h1{ 
-  border-bottom: 2px solid black;
+h1 {
+  border-bottom: 1px solid lightgray;
   width: 100%;
   padding:  0%;
   margin:  0;
   text-align: center;
-  
 }
+
+h5 {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  padding:  0%;
+  margin:  0;
+  text-align: left;
+}
+
+p {
+  font-size: 14px;
+}
+
 .box{ 
   border: 2px solid black;
   padding: 0;
@@ -40,35 +43,47 @@ h1{
 .sudo{ 
   width: 6vw ;
 }
+
 .smaller{ 
 width: 5vw;
 }
 
-
 .box-Legend{ 
-  border: 2px solid black;
+  border: 2px solid lightgray;
   margin-top: 3%;
   padding: 0%;
   max-width: 100%;
 }
+
 .legend{ 
-  border: 1px solid black;
+  border: 1px solid lightgray;
   padding: 0 ;
   width: 100px
 }
+
 .right{ 
   border-left: 0px solid black;
 }
+
 .padder{ 
   padding-top: 10%;
 }
+
 .Full{ 
-padding: 0;
-width: 100%;
-border-bottom: 2px solid black;
+  padding: 0;
+  width: 100%;
+  border-bottom: 2px solid black;
 }
 
 .outline{
   border: 2px solid black;
 }
 
+.legendspacing {
+  padding: 5
+}
+
+.padding-0 {
+  padding-right:0;
+  padding-left:0;
+}

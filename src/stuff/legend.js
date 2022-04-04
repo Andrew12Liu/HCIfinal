@@ -7,9 +7,10 @@ import double from "./legend.json";
 
 export default function Legend() {
   return (
-    <Container className="box-Legend">
-      <h1>LEGEND</h1>
-      <Row className = "full">
+    <Container fluid style={{fontSize:"14px", padding:1}}>
+      <br/>
+      <h4>Legend</h4>
+      <Row className = "legendspacing">
         <Col className = "legend">
           {double.col1.map((x) => (
             <Row className = 'legendRow'>

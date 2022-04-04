@@ -1,43 +1,48 @@
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
-import general from "./general.json";
+import { Container, Row, Col, Form, InputGroup, Stack } from "react-bootstrap";
 import React from "react";
 import "./general.css";
-import double from "./generalSingle.json";
 export default function General() {
   return (
-    <Container className="box">
-      <h1>General</h1>
-
-      {general.map((x) => (
-        <Row className="rowbox">
-          <Col className="colbox">{x.title}</Col>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder={`${x.range}`} />
-            </Form.Group>
-          </Form>
-        </Row>
-      ))}
-
-      {double.map((x) => (
-        <Row>
-          <Col className="col">{x.title}</Col>
-          <Col className="col">
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="number" placeholder={`${x.start}`} />
-              </Form.Group>
-            </Form>
-          </Col>
-          <Col className="col">
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="number" placeholder={`${x.end}`} />
-              </Form.Group>
-            </Form>
-          </Col>
-        </Row>
-      ))}
+    <Container fluid style={{fontSize:"14px", padding:1}}>
+      <h5>General</h5>
+        <Form>
+          <Form.Group as={Row}>
+            <Form.Label column>Tickers:</Form.Label>
+            <Col md={2}>
+              <Form.Control type="formBasicEmail" placeholder="Symbols or CIKs"/>
+            </Col>
+            <Form.Label column>Insider:</Form.Label>
+            <Col md={2}>
+              <Form.Control type="formBasicEmail" placeholder="Symbols or CIKs"/>
+            </Col>
+              <Form.Label column>Share Price:</Form.Label>
+            <Col>
+              <InputGroup>
+                <InputGroup.Text id = "dollar1">$</InputGroup.Text>
+                <Form.Control type="number" placeholder="Min"/>
+              </InputGroup>
+            </Col>
+            <Col>
+              <InputGroup>
+                <InputGroup.Text>$</InputGroup.Text>
+                <Form.Control type="number" placeholder="Max"/>
+              </InputGroup>
+            </Col>
+            <Form.Label column>Liquidity:</Form.Label>
+            <Col>
+              <InputGroup>
+                <InputGroup.Text>$</InputGroup.Text>
+                <Form.Control type="number" placeholder="Min"/>
+              </InputGroup>
+            </Col>
+            <Col>
+              <InputGroup>
+                <InputGroup.Text>$</InputGroup.Text>
+                <Form.Control type="number" placeholder="Max"/>
+              </InputGroup>
+            </Col>
+          </Form.Group>
+        </Form>
     </Container>
   );
 }
