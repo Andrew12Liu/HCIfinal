@@ -1,0 +1,46 @@
+{ "col1": [
+    { "title" : "A",
+        "start" : "Ammended Filing",
+        "end":"test3",
+        "color" : "white"
+    },
+    { "title" : "D",
+        "start" : "Derivative transaction in filing (usually option exercise)",
+        "end":"test3",
+        "color" : "white"
+    },
+    { "title" : "E",
+        "start" : "Error detected in filing",
+        "end":"test3",
+        "color" : "white"
+    },
+    { "title" : "M",
+        "start" : "Multiple transactions in filing; earliest reported transaction date and weighted average transaction price",
+        "end":"test3",
+        "color" : "white"
+    }
+    
+],
+"col2": [
+    { "title" : "S-Sale",
+        "start" : "Sale of securities on an exchange or to another person",
+        "end":"test3"
+        ,"color" : "red"
+    },
+    { "title" : "S - Sale+OE",
+        "start" : "Sale of securities on an exchange or to another person (after option exercise)",
+        "end":"test3",
+        "color" : "yellow"
+    },
+    { "title" : "F - Tax",
+        "start" : "Payment of exercise price or tax liability using portion of securities received from the company",
+        "end":"test3",
+        "color" : "blue"
+    },
+    { "title" : "P - Purchase",
+        "start" : "Purchase of securities on an exchange or from another person",
+        "end":"test3",
+        "color" : "green"
+    }
+    
+]} 

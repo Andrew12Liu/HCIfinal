@@ -1,0 +1,13 @@
+{
+    "legend" : [ "","Filing Date","Trade Date","Ticker","Name","Industry","Ins","Trade Type","Price","Qty","Owned","%Own", "Value","Form", "Type of buy"],
+    "title" : ["AAPL" , "tit2","tit3"],
+    "AAPL" : { "content" : 
+        [{"stuff" : "stuff" , "click" : "special"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "no"}],
+    "color" : "red"},
+    "tit2" : { "content" : 
+        [{"stuff" : "stuff" , "click" : "no"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"}],
+    "color" : "blue"},
+    "tit3" : { "content" : 
+        [{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "no"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"},{"stuff" : "stuff" , "click" : "yes"}],
+    "color" : "green"}
+}

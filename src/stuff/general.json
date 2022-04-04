@@ -1,0 +1,8 @@
+[
+    { "title" : "Tickers",
+        "range" : "Symbols or CIK's"},
+        { "title" : "Insider",
+            "range" : "Insider Name or CIK"}
+    
+    
+    ]

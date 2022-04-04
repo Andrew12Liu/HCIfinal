@@ -1,0 +1,10 @@
+{
+  "fields": [
+    { "title": "Max Results", "range": "test2" },
+    { "title": "Page", "range": "test2" }
+  ],
+  "drop": [
+    { "title": "Select Grouping", "sub" : "Group By" , "stuff": ["Filing","Company"] },
+    { "title": "Select Sorting", "sub" : "Sort By" ,"stuff": ["Filing Date", "Trade Date", "Ticker Symbol", "Trade Value"] }
+  ]
+}

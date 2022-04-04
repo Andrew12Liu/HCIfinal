@@ -1,0 +1,10 @@
+{
+    "fields": [
+      { "title": "N Days Ago", "range": "" }
+    ],
+    "drop": [
+      { "title": "Select Range", "sub" : "Filing Date" , "stuff": ["All Dates","Latest Day","Last 3 days","Last 1 Week","Last 2 Weeks","Last 1 Month","Last 3 Months","Last 6 Months","Last 1 Year","Last 2 Years", "Last 4 Years"] },
+      { "title": "Select Range", "sub" : "Trade Date" ,"stuff": ["All Dates","Latest Day","Last 3 days","Last 1 Week","Last 2 Weeks","Last 1 Month","Last 3 Months","Last 6 Months","Last 1 Year","Last 2 Years", "Last 4 Years"] }
+    ]
+  }
+  

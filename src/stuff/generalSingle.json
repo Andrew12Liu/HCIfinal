@@ -1,0 +1,11 @@
+[
+    { "title" : "Share Price $",
+        "start" : "Min",
+        "end":"Max"
+    },
+    { "title" : "Liquidity M $",
+        "start" : "Min",
+        "end":"Max"
+    }
+    
+    ]

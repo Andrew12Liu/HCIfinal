@@ -1,0 +1,37 @@
+{
+"first" :[ 
+        { "title" : "P-Purchase",
+        "range" : "test2"},
+        { "title" : "S-Sale",
+            "range" : "test2"},
+        { "title" : "A-Grant",
+            "range" : "test2"},
+        { "title" : "D-Sale to Lss",
+            "range" : "test2"}
+        
+        ]
+            
+         ,
+        "third" :[ 
+            { "title" : "X-Option Ex",
+                "range" : "test2"},
+                { "title" : "C-CNV Deriv",
+                    "range" : "test2"},
+                { "title" : "W-Inherited",
+                    "range" : "test2"},
+                { "title" : "Multiple Days",
+                    "range" : "test2"}]
+             ,
+            "second" :[ 
+                { "title" : "G-Gift",
+                    "range" : "test2"},
+                    { "title" : "No Deriv",
+                        "range" : "test2"},
+                    { "title" : "F-Tax",
+                        "range" : "test2"},
+                    { "title" : "M-Option Ex",
+                        "range" : "test2"}]
+                
+    
+    
+            }

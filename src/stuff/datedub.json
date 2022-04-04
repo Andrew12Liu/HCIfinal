@@ -1,0 +1,5 @@
+[
+  { "title": "Custom Filing Date Range", "start": "Start", "end": "End" },
+  { "title": "Custom Trade Date Range", "start": "Start", "end": "End" },
+  { "title": "Filing Delay", "start": "Min", "end": "Max" }
+]
