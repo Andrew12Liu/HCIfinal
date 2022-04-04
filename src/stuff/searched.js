@@ -82,54 +82,7 @@ export default function Searched() {
         alt=""
       />
 
-      {stuff.title.map((k) => (
-        <Row
-          style={{
-            padding: "0px",
-            margin: "0px",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-          noGutters={true}
-        >
-          <h1> {k} </h1>
-          {stuff.legend.map((i) => (
-            <div className="sudo">{i}</div>
-          ))}
-
-          {stuff[`${k}`].content.map((p) => (
-            <div
-              style={{ backgroundColor: `${stuff[`${k}`].color}` }}
-              className="sudo"
-            >
-              {parser(p, setCount)}
-            </div>
-          ))}
-        </Row>
-      ))}
-      {count ? (
-        <>
-          <Row>{comp[`${count}`].comp}</Row>
-
-          {comp[`${count}`].contents.map((k) => (
-            <Row>
-              {console.log(k.stuff)}
-              {k.stuff.map((o) => (
-                <div
-                  style={{ backgroundColor: `${k.color}` }}
-                  className="smaller"
-                >
-                  {o}
-                </div>
-              ))}
-            </Row>
-          ))}
-        </>
-      ) : (
-        <></>
-      )}
+    
 
       <Box>
         <GridRow style={{ backgroundColor: "lightblue" }}>
