@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Accordion, Button, Col, Container, Row, Table } from "react-bootstrap";
-import logo from './insiderChart.png';
 import file from './file.png';
 import BootstrapTable from 'react-bootstrap-table-next';
 
@@ -52,7 +51,7 @@ export default function Searched() {
 
   const rows = [
   {
-    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml"><img src={file} width="36px" height="36px"/></a>,
+    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml" target="_blank"><img src={file} width="36px" height="36px"/></a>,
     filetype: "",
     filedate: "2022-02-07 18:30:37",
     tradedate: "2022-02-03",
@@ -66,7 +65,7 @@ export default function Searched() {
     deltaown: "-6%",
     value: "-$4,369,548"
   },{
-    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml"><img src={file} width="36px" height="36px"/></a>,
+    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml" target="_blank"><img src={file} width="36px" height="36px"/></a>,
     filetype: "D",
     filedate: "2022-02-03 18:35:50",
     tradedate: "2022-02-01",
@@ -80,7 +79,7 @@ export default function Searched() {
     deltaown: "0%",
     value: "-$344,154"
   },{
-    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml"><img src={file} width="36px" height="36px"/></a>,
+    formpic: <a href = "https://www.sec.gov/Archives/edgar/data/320193/000032019322000025/xslF345X03/wf-form4_164427662367600.xml" target="_blank"><img src={file} width="36px" height="36px"/></a>,
     filetype: "",
     filedate: "2021-11-16 18:30:25",
     tradedate: "2021-11-12",

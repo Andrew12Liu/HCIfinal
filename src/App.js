@@ -1,18 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
 import General from "./stuff/General";
 import Date2 from "./stuff/Date2";
 import Industry2 from "./stuff/Industry2";
-import Group from "./stuff/group";
 import Checkmarks2 from "./stuff/checkmarks2";
 import Legend from "./stuff/legend";
 import Navigation from "./stuff/nav";
 import Filing2 from "./stuff/Filing2";
 import {Button, Col, Container, Row, Modal } from "react-bootstrap";
 import Searched from "./stuff/searched";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion } from '@fortawesome/free-solid-svg-icons';
+import "./App.css";
 
 
 function MyVerticallyCenteredModal(props) {
@@ -75,40 +73,41 @@ function App() {
   const [modalShow, setModalShow] = useState(false);
   const [clearmodalShow, clearsetModalShow] = useState(false);
   return (
-    <Container className="main">
-      <Navigation />
-      <Row>
-        <Col>
-          <General />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Industry2 />
-        </Col>
-        <Col>
-          <Date2 />
-        </Col>
-        <Col>
-          <Checkmarks2 />
-        </Col>
-        <Col>
-          <Filing2 />
-        </Col>
-      </Row>
-      <>
-      <Button onClick = {() => setCount(true)} style = {{"width" : "10vw"}}> Search</Button>
-      {" "}
-      <Button onClick={() => {clearsetModalShow(true);
+    <Container fluid className="main">
+      <div>
+        <Navigation />
+        <Row>
+          <Col>
+            <General />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Industry2 />
+          </Col>
+          <Col>
+            <Date2 />
+          </Col>
+          <Col>
+            <Checkmarks2 />
+          </Col>
+          <Col>
+            <Filing2 />
+          </Col>
+        </Row>
+        <>
+        <Button onClick = {() => setCount(true)}> Search</Button>
+        {" "}
+        <Button onClick={() => {clearsetModalShow(true);
+          
         
-      
-      }}>Clear</Button>
-      {" "}
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-      <FontAwesomeIcon icon={faQuestion} />
-      </Button>
-      </>
-      
+        }}>Clear</Button>
+        {" "}
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+        <FontAwesomeIcon icon={faQuestion} />
+        </Button>
+        </>
+      </div>
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -119,7 +118,7 @@ function App() {
       />
 
 
-      <Legend />
+      <Legend/>
      {count ? (<Searched/>) : (<></>)} 
       
     </Container>
